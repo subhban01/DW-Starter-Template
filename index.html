@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Designer Portfolio</title>
+<link href="stylesheet.css" rel="stylesheet" type="text/css">
+
+<!--Scripts for slow scrolling
+-->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="javascript/smoothscroll.js"></script>       
+<script>
+	$(document).ready(function(){
+	$('a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+
+	    var target = this.hash,
+	    $target = $(target);
+
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+	    }, 900, 'swing', function () {
+	        window.location.hash = target;
+	    });
+	});
+});
+	</script>
+
+
+     
+
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.--><script>var __adobewebfontsappname__="dreamweaver"</script>
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.--><script>var __adobewebfontsappname__="dreamweaver"</script>
+
+
+<!--Script for adding id to class dynamically using JS. This is being done to add the "selected" id to the appropriate side navbar li item-->
+<script type="application/javascript">
+function add1(){
+	document.getElementById("selected").id = null;
+document.querySelector('span.icon-home').id = "selected";
+}
+function add2(){
+document.getElementById("selected").id = null;
+document.querySelector('span.icon-briefcase').id = "selected";
+}
+function add3(){
+	document.getElementById("selected").id = null;
+document.querySelector('span.icon-star').id = "selected";
+}
+function add4(){
+	document.getElementById("selected").id = null;
+document.querySelector('span.icon-trophy').id = "selected";
+}
+function add5(){
+	document.getElementById("selected").id = null;
+document.querySelector('span.icon-map-marker').id = "selected";
+}
+</script>
+
+
+
+</head>	
+
+<body>
+<!--Each page in the site is a section element-->
+<section id="page1">
+
+<!--Topnav is the static header at the top of the site-->
+<div class="topnav">
+<img src="img/dexter.png" width="480" height="480" id="image" alt="Profile pic">
+
+<header id="hgrp">
+<h1><a href=#>Designer name</a></h1>
+<h2>UI/UX front-end web designer living in Bangalore, India</h2>
+</header>
+</div>
+
+
+
+<!--Sidebar-->
+<ul class="side-navbar">
+<li><a href="#page1" onClick="add1()"><span class="icon-home icon-bigger" id="selected"></span>Home</a></li>
+<li><a href="#page2" onClick="add2()"><span class="icon-bigger icon-briefcase"></span>About me</a></li>
+<li><a href="#page3" onClick="add3()"><span class="icon-bigger icon-star"></span>My work</a></li>
+<li><a href="#page4" onClick="add4()"><span class="icon-bigger icon-trophy"></span>Awards</a></li>
+<li><a href="#page5" onClick="add5()"><span class="icon-bigger icon-map-marker"></span>Contact me</a></li>
+</ul>
+
+
+
+
+<p class="roundedCorners">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+<br><br>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<br><br>
+
+<p class="roundedCorners">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</section>
+
+
+<section id="page2">
+
+<iframe width="854" height="310" src="https://www.youtube.com/embed/jdYVSRBNqKc" allowfullscreen></iframe>
+
+<p class="roundedCorners">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+
+
+</section>
+<section id="page3">
+
+<p class="roundedCorners">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</section>
+
+<section id="page4">
+
+
+
+<p class="roundedCorners">Lorem ipsum dolor sit amet</p>
+<p class="roundedCorners">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+<p class="roundedCorners">quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+<p class="roundedCorners">quis nostrud exercitation ullamco </p>
+<p class="roundedCorners">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+<p class="roundedCorners">Lorem ipsum dolor sit </p>
+<p class="roundedCorners">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+
+
+
+
+
+</section> 
+
+<section id="page5">
+
+<p class="roundedCorners">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+
+
+<!--Social icons. Change the # in the href of each link to the appropriate profile link-->
+<ul class="icons">
+<li><a href="#" id="facebook"><span class="icon-facebook"></span></a></li>
+
+<li><a href="#" id="twitter"><span class="icon-twitter"></span></a></li>
+
+<li><a href="#" id="googlePlus"><span class="icon-google-plus"></span></a></li>
+
+<li><a href="#" id="gitHub"><span class="icon-github"></span></a></li>
+
+</ul>
+
+
+
+<!--Footer-->
+  <div class="footer"><em>
+Web design by: </em> Subhadeep Banerjee
+</div>
+  
+</section>
+
+
+</body>
+</html>
